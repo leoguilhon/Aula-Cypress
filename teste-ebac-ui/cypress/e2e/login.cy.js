@@ -17,6 +17,7 @@ context('Funcionalidade Login', () =>{
         cy.get('#username').type('xxxyyyzzz@teste.com')
         cy.get('#password').type('teste@teste.com')
         cy.get('.woocommerce-form > .button').click()
+        
         cy.get('.woocommerce-error').should('contain', 'Endereço de e-mail desconhecido.')
 
     })
@@ -26,6 +27,7 @@ context('Funcionalidade Login', () =>{
         cy.get('#username').type('aluno_ebac@teste.com')
         cy.get('#password').type('xxxyyyzzz')
         cy.get('.woocommerce-form > .button').click()
+        
         cy.get('.woocommerce-error').should('contain', 'Perdeu a senha?')
     })
 })
