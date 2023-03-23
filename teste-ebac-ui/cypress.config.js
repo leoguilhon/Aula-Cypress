@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
+    projectId: "edpqnz",
     chromeWebSecurity: false,
     baseUrl: 'http://lojaebac.ebaconline.art.br/'
   },
